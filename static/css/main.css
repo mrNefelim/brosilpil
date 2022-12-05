@@ -1,0 +1,36 @@
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    display: block;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.flex-block {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    width: 100%;
+}
+
+.flex-block > * {
+    display: block;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.welcome {
+    font-size: 18px;
+}
+
+.messengers {
+    display: inline-block;
+}
