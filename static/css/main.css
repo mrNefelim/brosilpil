@@ -6,6 +6,17 @@ html, body {
 
 a {
     display: block;
+    padding: 7px;
+    text-underline-offset: 0.5rem;
+    color: rgb(13, 110, 253);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: .1s;
+}
+
+a:hover {
+    color: rgb(10, 88, 202);
+    text-decoration-color: rgb(10, 88, 202);
 }
 
 .container {
@@ -13,6 +24,7 @@ a {
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .flex-block {
@@ -33,4 +45,68 @@ a {
 
 .messengers {
     display: inline-block;
+}
+
+.messengers img {
+    width: 30px;
+    padding-right: 3px;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.meet img {
+    width: 30px;
+    padding-right: 3px;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.youtube img {
+    width: 30px;
+    padding-right: 3px;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.blogs img {
+    width: 30px;
+    padding-right: 3px;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.book {
+    display: inline-block;
+    vertical-align: top;
+    width: 120px;
+    height: 250px;
+    margin: 10px;
+    text-align: center;
+}
+
+.book span {
+    display: block;
+    width: 120px;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+@media screen
+and (max-device-width: 1024px) {
+    a {
+        font-size: 22px;
+    }
+
+    .welcome {
+        font-size: 22px;
+    }
+
+    .flex-block {
+        display: block;
+    }
+
+    .flex-block > * {
+        padding: 0;
+    }
 }
